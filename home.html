@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar {
+            padding: 20px;
+            display: flex;
+
+            #header {
+                margin-left: 25px;
+                font-size: 35px;
+            }
+
+            #upper {
+                margin-left: 25px;
+
+            }
+        }
+
+        .nav {
+            margin-left: 60%;
+            width: 40%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav a {
+            margin-left: 30px;
+            font-size: large;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .nav a:hover {
+            font-size: larger;
+        }
+
+        .nav a:active {
+            color: #2d7830;
+        }
+
+        .container {
+            width: 100%;
+            padding: 50px;
+            padding-top: 40px;
+            height: 84vh;
+            
+        }
+
+        #exp {
+            color: white;
+        }
+
+        .background {
+            background-image: url('.vscode HTML/nature2.png');
+            height: 84vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 100%;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        header {
+            background: linear-gradient(135deg, #196d46, #0d5391);
+            color: white;
+        }
+
+        section {
+            height: 100vh;
+        }
+
+        /* content */
+
+
+        /* calculator */
+
+        main {
+            padding: 20px 0;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #4CAF50;
+        }
+
+        section {
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        #causes {
+            height: 250vh;
+        }
+
+        #second {
+            padding: 45px;
+        }
+
+        #calc {
+            padding: 45px;
+        }
+
+        #reduce {
+            padding: 45px;
+        }
+
+        li {
+            margin-top: 20px;
+        }
+
+        input {
+            margin: 1px 0;
+            padding: 10px;
+            width: calc(33% - 22px);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .result {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .tips {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #2d7830;
+        }
+
+        #footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+
+        }
+
+        .footer-section {
+            text-align: left;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 10px;
+        }
+
+        .footer-copyright {
+            margin-top: 20px;
+        }
+
+        .fab {
+            font-size: 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="home">
+        <div class="back">
+            <header>
+                <div class="navbar">
+                    <div class="logo">
+                        <h1 id="header">EVS</h1>
+                        <p id="upper">project</p>
+                    </div>
+                    <div class="nav">
+                        <a href="#home">Home</a>
+                        <a href="#causes">Causes</a>
+                        <a href="#calculator">Calculator</a>
+                        <a href="#reducing">Reducing steps</a>
+                    </div>
+                </div>
+            </header>
+            <div class="background"></div>
+            <div class="container" id="exp">
+
+                <h2>What is Carbon Footprint?</h2>
+                <br>
+                <p>In today's world, climate change is a pressing global issue. One of the primary contributors to this
+                    phenomenon is our carbon footprint. A carbon footprint is a measure of the total greenhouse gas
+                    emissions caused by an individual, organization, event, or product. By understanding and reducing
+                    our carbon footprint, we can play a crucial role in mitigating climate change and ensuring a
+                    sustainable future.</p><br>
+                <p>A carbon footprint is a calculation of the total amount of greenhouse gases (GHGs) emitted by a
+                    person, company, product, or event. It's usually reported in tons of carbon dioxide equivalents
+                    (CO2-eq) per unit, such as per year, per kilometer traveled, or per kilogram of protein consumed.
+                </p> 
+            </div>
+        </div>
+            
+                
+                    
+                    
+                    
+                    
+                
+                
+            
+    </section>
+    <section id="causes">
+        <main>
+            <div class="container" id="second">
+                <h2>Causes of Carbon footprints</h2><br>
+                <h3>1. Transportation</h3>
+                <p>Commuting: Driving cars, motorcycles, or using public transportation powered by fossil fuels.
+                    Air travel: Long-distance flights emit significant amounts of CO2 due to the fuel consumption of
+                    airplanes.
+                    Shipping: The transportation of goods by sea, often using large, fuel-intensive vessels.</p><br>
+                <h3> 2. Energy Consumption</h3>
+                <p> Electricity: Generating electricity from fossil fuels like coal, natural gas, and oil.
+                    Heating and Cooling: Using fossil fuels or electricity to heat or cool homes and buildings.
+                    Appliances and Electronics: The energy used by household appliances and electronic devices.</p>  
+                <h3>3. Food Production and Consumption</h3>
+                <p> Livestock: Methane emissions from livestock, particularly cattle and sheep.  
+                    Food Processing and Transportation: The energy used to process, transport, and store food.  
+                    Food Waste: The emissions associated with the production and disposal of food that is not consumed.
+                </p>
+                <h3> 4. Industrial Activities</h3>
+                <p>Manufacturing: The energy and materials used in the production of goods.
+                    Construction: The emissions from the extraction and processing of building materials.
+                    Waste Disposal: The emissions associated with landfills and waste incineration. </p><br>
+                <h3> 5. Deforestation</h3>
+                <p>Habitat Loss: The destruction of forests reduces their ability to absorb CO2 from the atmosphere.
+                    Land Use Change: Clearing forests for agriculture or other purposes.</p>
+                <br>
+
+
+
+
+                <h2>Imapacts of Carbon footprint</h2>
+                <p>A high carbon footprint can have significant negative impacts on our planet and future generations.
+                    Here are some of the key consequences:
+
+                <h3>1. Climate Change</h3>
+                <p>Rising Temperatures: Increased greenhouse gas emissions, primarily carbon dioxide, trap heat in the
+                    atmosphere, leading to global warming.
+                    Extreme Weather Events: More frequent and intense hurricanes, droughts, floods, and heatwaves.
+                    Sea Level Rise: Melting glaciers and ice caps contribute to rising sea levels, threatening coastal
+                    cities and communities.</p>
+                <h3> 2. Environmental Degradation</h3>
+                <p> Ocean Acidification: Increased CO2 in the atmosphere dissolves in the oceans, making them more
+                    acidic and harming marine ecosystems, particularly coral reefs.
+                    Loss of Biodiversity: Climate change can disrupt ecosystems, leading to habitat loss and species
+                    extinction.
+                    Air Pollution: Burning fossil fuels releases pollutants that can harm human health and the
+                    environment.</p>
+                <h3> 3. Economic Impacts </h3>
+                <p> Damage to Infrastructure: Extreme weather events can cause significant damage to infrastructure,
+                    such as roads, bridges, and buildings.
+                    Disruption of Supply Chains: Climate change can disrupt agricultural production, transportation, and
+                    other economic activities.
+                    Increased Costs: Adapting to climate change can be expensive, including investments in renewable
+                    energy, flood protection, and other measures.</p>
+                <h3> 4. Health Risks </h3>
+                <p>Heat-Related Illnesses: Rising temperatures can increase the risk of heat-related illnesses, such as
+                    heatstroke and dehydration.
+                    Respiratory Problems: Air pollution can exacerbate respiratory conditions like asthma and
+                    bronchitis.
+                    Waterborne Diseases: Climate change can affect water quality and increase the risk of waterborne
+                    diseases.
+                    By reducing our carbon footprint, we can help mitigate these impacts and create a more sustainable
+                    future for ourselves and generations to come.</p>
+            </div>
+
+
+        </main>
+    </section>
+    <section id="calculator">
+        <main>
+            <div class="container" id="calc">
+
+                <h2>Calculate Your Carbon Footprint</h2>
+                <br>
+                <p>Enter your lifestyle choices below:</p><br>
+                <input type="number" id="milesDriven" placeholder="Miles driven per week" />
+                <input type="number" id="electricityUsage" placeholder="Electricity usage (kWh/month)" />
+                <input type="number" id="meatConsumption" placeholder="Meat consumption (servings/week)" /><br><br>
+                <button onclick="calculateFootprint()">Calculate</button>
+                <div id="result" class="result"></div>
+                <button id="shareBtn" class="hidden" onclick="shareResults()">Share on Social Media</button>
+                <p>The average carbon footprint per person globally is around 4 tons of carbon dioxide per year.
+                    However, carbon footprints vary across countries, generations, and income groups. For example, the
+                    average carbon footprint in India is about 1.6 tons per year, while the average in the United States
+                    is about 16 tons per year. </p>
+                <p></p>To avoid a 2℃ rise in global temperatures, the average carbon footprint per person needs to drop
+                to under 2 tons by 2050.</p>
+
+
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </section>
+    <section id="reducing">
+        <main>
+            <div id="reduce">
+                <h2>Here are some ways to reduce your carbon footprint: </h2><br>
+
+
+                <ul>
+
+                    <li>Energy efficiency: Use energy-efficient appliances, insulate your home, and reduce your use of
+                        air conditioning.</li>
+
+                    <li>Renewable energy: Switch to renewable energy sources for your home.</li>
+                    <li>Reduce waste: Buy products with minimal packaging, use reusable bags and containers, and
+                        recycle.
+                        You can also compost food waste.</li>
+                    <li>Use less water: Use less water.</li>
+                    <li> Buy local: Buy food locally.</li>
+                    <li>Eliminate bottled water: Use a water dispenser instead of buying bottled water.</li>
+                    <li> Cycle: Cycle to work.</li>
+
+
+                    <p>Reducing your carbon footprint can help fight global warming and improve the environment. It can
+                        also
+                        help businesses become more energy efficient and responsible consumers of energy.</p>
+            </div>
+        </main>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p></p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email:  
+                    kumarkaran100m@gmail.com</p>
+                <p>Phone: +917292826030</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com">linkedin<i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com">instagram<i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i   class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div   class="footer-copyright">
+            &copy; 2023 Your Website. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
